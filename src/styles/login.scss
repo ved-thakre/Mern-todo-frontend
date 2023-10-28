@@ -1,15 +1,21 @@
 .login>section {
     @include container(900px, unset, 2rem);
     min-height: 80%;
-    background-color: $color2;
+    background-color: #dee2e6;
 
     >form {
         @include flexBox(column, center, flex-start, 2rem);
         @include inputs;
 
+        input {
+            background-color: #dee2e6;
+            border: 1px solid white;
+        }
+
         button {
             @include styledText(0.9rem);
             @include myButton(18.75rem, 1rem);
+            background-color: #212529;
         }
     }
 }
