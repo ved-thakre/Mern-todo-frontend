@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import { Context } from '../main'
+import React, { useContext } from 'react';
+import { Context } from '../main';
 import Loader from '../Components/Loader';
 import { Navigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
@@ -16,8 +16,8 @@ const Profile = () => {
     <Loader />
   ) : (
     <div>
-      <h1>{isAuthenticated ? user?.name : ""}</h1>
-      <p>{isAuthenticated ? user?.email : ""}</p>
+      <h1>{user?.name}</h1>
+      <p>{user?.email }</p>
     </div>
   );
 };
